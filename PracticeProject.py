@@ -14,13 +14,18 @@ num = int(input("Which fib number do you want? "))
 if num == 1 or num == 2:
     print(f"The {num}st/nd fibonaci number is 1")
 
-x = 1
-y = 1
-
+l = []
+x=1
+y=1
 for i in range(num):
-    x += y
+   a = x + y
+   x = y
+   y = a
+   a.append(l)
 
+print(a)
 
+# 112358
 
 
 
