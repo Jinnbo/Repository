@@ -7,19 +7,19 @@ q1 = input("What is 32 + 37? ").lower().strip("-")
 
 if q1 == "69" or q1 == "sixty nine" or q1 == "sixtynine":
     counter += 1
-    print("Correct")
+    print("Correct!")
 else:
-    print("Incorrect")
+    print("Incorrect. The answer is 69")
 
 q2 = input("Are you a guy? ").lower().strip(".")
 
 if q2 == "yes" or q2 == "yea" or q2 == "yup" or q1 == "correct":
     counter += 1
-    print("Correct")
+    print("You are correct!")
 else:
-    print("Incorrect")
+    print("Hmmmm")
 
-q3 = input("Whos the coolest person you know? ").lower().strip(",.")
+q3 = input("Whos the coolest person you know? ").lower().strip(",.!")
 
 if q3 == "jimmy":
     print("Correct!")
@@ -31,16 +31,20 @@ q4 = input("How old are you? ")
 
 if q4 == "17" or q4 == "seventeen":
     counter += 1
-    print("Correct")
+    print("Correct!")
 else:
     print("Incorrect")
 
 q5 = input("How many seconds are in an hour? ").lower().strip("-")
 
 if q5 == "3600" or q5 == "thirty six hundred" or q5 == "three thousand six hundred":
-    print("Correct")
+    print("Correct!")
     counter += 1
 else:
-    print("Incorrect")
+    print("Incorrect. There are 3600 seconds in an hour")
 
-print(f"Your score is {counter}")
+
+if counter >= 3:
+    print(f"Congrats you passed! Your score is {counter/5*100}%")
+elif counter < 3:
+    print(f"YOU FAILED. You got{counter/5*100}")
