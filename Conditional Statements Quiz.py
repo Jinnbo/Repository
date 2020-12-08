@@ -35,14 +35,13 @@ if q4 == "17" or q4 == "seventeen":
 else:
     print("Incorrect")
 
-q5 = input("How many seconds are in an hour? ").lower().strip("-,./!")
+q5 = input("How many seconds are in an hour? \n A. 3600 \n B. 600 \n C. 36000 \n D. 6000 \n").lower().strip("-,./!")
 
-if q5 == "3600" or q5 == "thirty six hundred" or q5 == "three thousand six hundred":
+if q5 == "a":
     print("Correct!")
     counter += 1
 else:
     print("Incorrect. There are 3600 seconds in an hour")
-
 
 if counter >= 3:
     print(f"Congrats you passed! Your score is {counter/5*100}%")
