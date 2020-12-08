@@ -27,7 +27,7 @@ if q3 == "jimmy":
 else:
     print("Incorrect. It is Jimmy")
 
-q4 = input("How old are you? ")
+q4 = input("How old is Jimmy? ")
 
 if q4 == "17" or q4 == "seventeen":
     counter += 1
@@ -47,4 +47,4 @@ else:
 if counter >= 3:
     print(f"Congrats you passed! Your score is {counter/5*100}%")
 elif counter < 3:
-    print(f"YOU FAILED. You got{counter/5*100}")
+    print(f"YOU FAILED. You got {counter/5*100}%")
