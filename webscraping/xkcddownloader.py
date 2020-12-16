@@ -31,7 +31,7 @@ while not url.endswith("#"):
     else:
         # comic_url -> "https://image.xkcd"
         if comic_elem[0].get("src").startswith("/2067"):
-            comic_url = "https://xkcd.com" + comic_elem[0].get("src")cd ~
+            comic_url = "https://xkcd.com" + comic_elem[0].get("src")
         comic_url = "https:"+ comic_elem[0].get("src")
 
     # Download the image
@@ -43,7 +43,7 @@ while not url.endswith("#"):
     image_file = open(os.path.join("xkcd_pictures",os.path.basename(comic_url)), "wb")
 
     for chunk in res.iter_content(1000000):
-        imagefile.write(chunk)
+        image_file.write(chunk)
     image_file.close()
 
     # Get the Previous button URL
