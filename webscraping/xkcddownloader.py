@@ -32,7 +32,11 @@ while not url.endswith("#"):
         # comic_url -> "https://image.xkcd"
         if comic_elem[0].get("src").startswith("/2067"):
             comic_url = "https://xkcd.com" + comic_elem[0].get("src")
-        comic_url = "https:"+ comic_elem[0].get("src")
+        elif comic_elem[0].get("src").startswith("/1525"):
+            comic_url =
+        else:
+
+            comic_url = "https:"+ comic_elem[0].get("src")
 
     # Download the image
     res = requests.get(comic_url)
